@@ -21,4 +21,9 @@ public class Review extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")     // Review 테이블에 member_id 컬럼 생성
     private Member member;
+
+    @ManyToOne
+    @JoinColumn(name = "store_id")  // 실제 DB 컬럼명에 맞게 수정
+    private Store store;
+
 }
