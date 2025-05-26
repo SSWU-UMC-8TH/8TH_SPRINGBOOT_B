@@ -28,6 +28,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.hibernate.orm:hibernate-core:6.0.2.Final'  // Hibernate 6.0.2 이상
 	implementation 'mysql:mysql-connector-java:8.0.33'  // MySQL 드라이버 추가
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'  // Swagger 추가, spring boot 버전이 3.4.4라서 2.7.0 버전 사용
+	implementation 'org.springframework.boot:spring-boot-starter-validation'  // validation 추가
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
